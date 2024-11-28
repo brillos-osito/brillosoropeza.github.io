@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Mi Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#carta">Carta</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Para ti, mi amor</h1>
+            <button id="ver-carta">Ver Carta</button>
+            <button id="mostrar-sorpresa" class="sorpresa-button">Sorpresa</button>
+            <div class="boletos-container">
+                <img id="boletos" src="" alt="Boletos para el cine" />
+            </div>
+        </section>
+
+        <section id="carta" class="hidden">
+            <div class="heart-container">
+                <div class="heart" onclick="showFullLetter()">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Para Mi Amor | Todos los derechos reservados</p>
+    </footer>
+
+    <div id="full-letter" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="hideFullLetter()">&times;</span>
+            <p></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
